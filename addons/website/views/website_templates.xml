@@ -158,7 +158,7 @@
 </template>
 
 <template id="layout_footer_copyright" inherit_id="website.layout" name="Footer Copyright">
-    <xpath expr="//footer" position="inside">
+    <!--xpath expr="//footer" position="inside">
         <div class="container mt16 mb8">
             <div class="pull-right" t-ignore="true" t-if="not editable">
                 Create a <a href="http://www.odoo.com/page/website-builder">free website</a> with
@@ -168,7 +168,7 @@
                 Copyright &amp;copy; <span t-field="res_company.name">Company name</span>
             </div>
         </div>
-    </xpath>
+    </xpath-->
 </template>
 
 <template id="layout_logo_show" inherit_id="website.layout" customize_show="True" name="Show Logo">
@@ -180,12 +180,12 @@
 </template>
 
 <template id="editor_head" inherit_id="website.layout" name="Editor" groups="base.group_website_publisher,base.group_website_designer">
-    <xpath expr='//t[@t-call-assets="website.assets_frontend"][@t-js]' position="after">
+    <!--xpath expr='//t[@t-call-assets="website.assets_frontend"][@t-js]' position="after">
         <t t-call-assets="website.assets_editor" t-js="false"/>
     </xpath>
     <xpath expr='//t[@t-call-assets="website.assets_frontend"][@t-css]' position="after">
         <t t-call-assets="website.assets_editor" t-css="false"/>
-    </xpath>
+    </xpath-->
 </template>
 
 <template id="assets_editor" name="Editor assets">
@@ -278,7 +278,7 @@
 </template>
 
 <template id="footer_default" inherit_id="website.footer_custom" customize_show="True" name="Automatic Footer">
-    <xpath expr="//div[@id='footer']" position="replace">
+    <!--xpath expr="//div[@id='footer']" position="replace">
         <div class="container hidden-print">
             <div class="row">
                 <div class="col-md-3">
@@ -338,7 +338,7 @@
                 </div>
             </div>
         </div>
-    </xpath>
+    </xpath-->
 </template>
 
 <template id="publish_management">
